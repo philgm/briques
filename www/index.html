@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+<!--
+  
+  Mise en forme initiale avec jsbin :
+  
+  Created using jsbin.com
+  Source can be edited via http://jsbin.com/akUmaBAM/4/edit
+  
+  Tout le reste créé avec Notepad++
+  
+-->
+
+<head>
+  <meta name="generator" content=
+  "HTML Tidy for Linux/x86 (vers 25 March 2009), see www.w3.org" />
+
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+  <title>Briques, v1</title>
+  
+<!--
+  Pour mémoire, ci-dessous les css et images initiales car on était parti de 
+  http://www.zetiz.com/sitepoint/demos/bootstrap3/
+  pour le design
+  
+  en lisant ce tutoriel Bootstrap3 :
+  http://www.sitepoint.com/understanding-twitter-bootstrap-3/
+
+  
+  <link href="http://getbootstrap.com/dist/css/bootstrap.css" rel="stylesheet" type=
+  "text/css" />
+  <link href=
+  "http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" type=
+  "text/css" rel="stylesheet" /> 
+ 
+  <link rel="shortcut icon" href="/bootstrap/img/favicon.ico" />
+  <link rel="apple-touch-icon" href="/bootstrap/img/apple-touch-icon.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href=
+  "/bootstrap/img/apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href=
+  "/bootstrap/img/apple-touch-icon-114x114.png" />
+
+
+ 
+-->  
+  
+<!-- Pour compiler avec Adobe Phonegap Build mais il ne faut pas le copier en local :-->  
+  
+  <script src="phonegap.js" type="text/javascript">
+</script>
+
+<link href="css/bootstrap.css" rel="stylesheet" type=
+  "text/css" />
+
+
+
+
+<!-- Option de base Bootstrap 3, permet de s'adapter au plus petit écran : -->  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+<!-- Pas compris le code ci-dessous, à approfondir ! -->      
+  
+<!--[if lt IE 9]>
+          <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+		
+
+<!-- Pas compris le code ci-dessous, 	
+
+  <style id="jsbin-css" type="text/css">
+/*<![CDATA[*/
+        
+        <style type="text/css">
+            body {  padding-top: 50px;}
+        </style>
+  /*]]>*/
+  </style>
+  
+  
+  à approfondir ! --> 	
+  
+</head>
+
+<body>
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Briques</a>	 		  
+        </div>			
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="index.html">Maison</a></li>
+            <li><a href="#about">Nouveautés</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Autres briques<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li class="dropdown-header">API PhoneGap</li>
+				<li><a href="compass.html">Boussole</a></li>
+                <li><a href="#">Autre brique</a></li>
+                <li><a href="#">Encore une autre</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">Autres tests</li>
+                <li><a href="#">Premier test</a></li>
+                <li><a href="#">Second test</a></li>
+              </ul>
+            </li>
+          </ul>
+		  <ul class="nav navbar-nav navbar-right">
+			<li>
+			<a href="http://getbootstrap.com/about">Contact</a>
+			</li>
+		  </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+  <div class="container">
+    <div class="text-center">
+      <br />
+      <br />
+
+      <h1>Briques de test</h1>
+
+      <p class="lead">Boite à outils avec les fonctions indispensables<br />
+      Version 1.0</p>
+    </div>
+
+    <h2>API de PhoneGap</h2>
+
+    <p class="lead">6 columns on desktop, 4 columns on tablets, 3 columns on phones</p>
+
+    <div class="row">
+      <div class="col-lg-2 col-sm-3 col-xs-4">
+        <a href="device.html"><img src=
+        "icons/Mobile-Phone-Message-256.png" class=
+        "thumbnail img-responsive" /></a>
+
+        <p class="text-center lead"><a href="device.html">Infos</a></p>
+      </div>
+
+      <div class="col-lg-2 col-sm-3 col-xs-4">
+        <a href="batterylevel.html"><img src="icons/Battery-Low-256.png" class=
+        "thumbnail img-responsive" /></a>
+
+        <p class="text-center lead"><a href="batterylevel.html">Batterie</a></p>
+      </div>	  
+	  
+      <div class="col-lg-2 col-sm-3 col-xs-4">
+        <a href="connection.html"><img src="icons/Antenna-256.png" class=
+        "thumbnail img-responsive" /></a>
+
+        <p class="text-center lead"><a href="connection.html">Réseau</a></p>
+      </div>
+
+      <div class="col-lg-2 col-sm-3 col-xs-4">
+        <a href="accelero.html"><img src="icons/Bike-Racing-02-256.png" class=
+        "thumbnail img-responsive" /></a>
+
+        <p class="text-center lead"><a href="accelero.html">Accéléromètre</a></p>
+      </div>	  
+	  
+      <div class="col-lg-2 col-sm-3 col-xs-4">
+        <a href="compass.html"><img src=
+        "icons/Compass-256.png" class=
+        "thumbnail img-responsive" /></a>
+
+        <p class="text-center lead"><a href="compass.html">Boussole</a></p>
+      </div>
+	  
+	        <div class="col-lg-2 col-sm-3 col-xs-4">
+        <a href="camera.html"><img src="icons/Camera-256.png" class=
+        "thumbnail img-responsive" /></a>
+
+        <p class="text-center lead"><a href="camera.html">Appareil photo</a></p>
+      </div>
+	  
+    </div>
+    <hr />
+
+    <h2>Autres briques</h2>
+
+    <p class="lead">6 columns on desktop, 4 columns on tablets, 3 columns on phones</p>
+
+    <div class="row">
+      <div class="col-lg-2 col-sm-3 col-xs-4">
+        <a href="#"><img src="icons/Wifi-256.png" class=
+        "thumbnail img-responsive" /></a>
+
+        <p class="text-center lead"><a href="#">Wifi</a></p>
+      </div>
+
+      <div class="col-lg-2 col-sm-3 col-xs-4">
+        <a href="#"><img src="icons/Bluetooth-256.png" class=
+        "thumbnail img-responsive" /></a>
+
+        <p class="text-center lead"><a href="#">Bluetooth</a></p>
+      </div>
+
+      <div class="col-lg-2 col-sm-3 col-xs-4">
+        <a href="#"><img src="icons/Compass-256.png" class=
+        "thumbnail img-responsive" /></a>
+
+        <p class="text-center lead"><a href="#">Compass</a></p>
+      </div>
+    </div>
+    <hr />
+
+    <h2>Données et communications client-serveur</h2>
+
+    <p class="lead">6 columns on desktop, 4 columns on tablets, 3 columns on phones</p>
+
+     <div class="row">
+      <div class="col-lg-2 col-sm-3 col-xs-4">
+        <a href="upload.html"><img src="icons/Upload-256.png" class=
+        "thumbnail img-responsive" /></a>
+
+        <p class="text-center lead"><a href="upload.html">Upload</a></p>
+      </div>
+
+      <div class="col-lg-2 col-sm-3 col-xs-4">
+        <a href="#"><img src="icons/Cloud-Download-256.png" class=
+        "thumbnail img-responsive" /></a>
+
+        <p class="text-center lead"><a href="#">Cloud-Download</a></p>
+      </div>
+
+      <div class="col-lg-2 col-sm-3 col-xs-4">
+        <a href="#"><img src="icons/User-Login-256.png" class=
+        "thumbnail img-responsive" /></a>
+
+        <p class="text-center lead"><a href="#">User-Login</a></p>
+      </div>
+
+      <div class="col-lg-2 col-sm-3 col-xs-4">
+        <a href="#"><img src="icons/Logout-256.png" class=
+        "thumbnail img-responsive" /></a>
+
+        <p class="text-center lead"><a href="#">Logout</a></p>
+      </div>
+      
+    </div>
+    <hr />
+
+    <h2>Enregistrement silencieux</h2>
+
+    <p class="lead">6 columns on desktop, 4 columns on tablets, 3 columns on phones</p>
+
+    <div class="row">
+      <div class="col-lg-2 col-sm-3 col-xs-4">
+        <a href="device.html"><img src=
+        "icons/Mobile-Phone-Message-256.png" class=
+        "thumbnail img-responsive" /></a>
+
+        <p class="text-center lead"><a href="device.html">Infos</a></p>
+      </div>
+
+      <div class="col-lg-2 col-sm-3 col-xs-4">
+        <a href="batterylevel.html"><img src="icons/Battery-Low-256.png" class=
+        "thumbnail img-responsive" /></a>
+
+        <p class="text-center lead"><a href="batterylevel.html">Batterie</a></p>
+      </div>	  
+	  
+      <div class="col-lg-2 col-sm-3 col-xs-4">
+        <a href="connection.html"><img src="icons/Antenna-256.png" class=
+        "thumbnail img-responsive" /></a>
+
+        <p class="text-center lead"><a href="connection.html">Réseau</a></p>
+      </div>
+
+      <div class="col-lg-2 col-sm-3 col-xs-4">
+        <a href="accelero.html"><img src="icons/Bike-Racing-02-256.png" class=
+        "thumbnail img-responsive" /></a>
+
+        <p class="text-center lead"><a href="accelero.html">Accéléromètre</a></p>
+      </div>	  
+	  
+      <div class="col-lg-2 col-sm-3 col-xs-4">
+        <a href="compass.html"><img src=
+        "icons/Compass-256.png" class=
+        "thumbnail img-responsive" /></a>
+
+        <p class="text-center lead"><a href="compass.html">Boussole</a></p>
+      </div>
+
+      <div class="col-lg-2 col-sm-3 col-xs-4">
+        <a href="#"><img src="icons/Wifi-256.png" class=
+        "thumbnail img-responsive" /></a>
+
+        <p class="text-center lead"><a href="#">Wifi</a></p>
+      </div>
+
+      <div class="col-lg-2 col-sm-3 col-xs-4">
+        <a href="#"><img src="icons/Bluetooth-256.png" class=
+        "thumbnail img-responsive" /></a>
+
+        <p class="text-center lead"><a href="#">Bluetooth</a></p>
+      </div>	  
+	  
+
+    </div>
+    <hr />
+
+    <h2>Briques Android</h2>
+
+    <p class="lead">6 columns on desktop, 4 columns on tablets, 3 columns on phones</p>
+
+    <div class="row">
+      <div class="col-lg-2 col-sm-3 col-xs-4">
+        <a href="#"><img src="icons/Wifi-256.png" class=
+        "thumbnail img-responsive" /></a>
+
+        <p class="text-center lead"><a href="#">Wifi</a></p>
+      </div>
+
+      <div class="col-lg-2 col-sm-3 col-xs-4">
+        <a href="#"><img src="icons/Bluetooth-256.png" class=
+        "thumbnail img-responsive" /></a>
+
+        <p class="text-center lead"><a href="#">Bluetooth</a></p>
+      </div>
+
+      <div class="col-lg-2 col-sm-3 col-xs-4">
+        <a href="#"><img src="icons/Compass-256.png" class=
+        "thumbnail img-responsive" /></a>
+
+        <p class="text-center lead"><a href="#">Compass</a></p>
+      </div>
+    </div>
+    <hr />
+    <br />
+    <br />
+  </div><!-- /.container -->
+  
+  
+  <!--
+  
+  Initialement, c'était ça :
+  
+	<script type='text/javascript' src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js">
+	</script>  
+  
+  	<script type='text/javascript' src=  "//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
+	</script>
+  
+  
+  J'ai récupéré toutes les dernières versions en local, 3.0.2 pour Bootstrap, 2.0.3 pour jQuery.
+  C'est pour la phase de développement, pour la version finale, il faudra
+  - soit prendre les versions "minifiées"
+  - soit utiliser un CDN (Content Delivery Network)
+  
+  
+-->
+  
+  <script type="text/javascript" src="js/jquery-2.0.3.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  
+
+
+	<script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript">
+            app.initialize();
+    </script>
+</body>
+</html>
