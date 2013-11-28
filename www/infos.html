@@ -33,6 +33,39 @@
     <![endif]-->
   <style type="text/css" id="holderjs-style"></style></head>
 
+  
+            <script type="text/javascript" charset="utf-8">
+                
+                var pictureSource; // picture source
+                var destinationType; // sets the format of returned value
+                
+                
+                function onBodyLoad()
+                {
+                    document.addEventListener("deviceready",onDeviceReady,false);
+                }
+                
+                /* When this function is called, PhoneGap has been initialized and is ready to roll */
+                function onDeviceReady()
+                {
+                    phoneGapReady.innerHTML = "PhoneGap is Ready";
+                    
+                }
+                
+                function getDeviceProperties() {
+                    var element = document.getElementById('deviceProperties');
+                    
+                    element.innerHTML = 'Device Name: ' + device.name + '<br />' +
+                    'Device PhoneGap: ' + device.phonegap + '<br />' +
+                    'Device Platform: ' + device.platform + '<br />' +
+                    'Device UUID: ' + device.uuid + '<br />' +
+                    'Device Version: ' + device.version + '<br />';
+                }
+
+                
+                </script>  
+  
+  
   <body>
 
     <!-- Fixed navbar -->
@@ -49,7 +82,7 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="compass.html">Boussole</a></li>
+            <li class="active"><a href="infos.html">Infos</a></li>
             <li><a href="nouveautes.html">Nouveautés</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Autres briques<b class="caret"></b></a>
@@ -79,14 +112,12 @@
     <div class="container theme-showcase">
 
 	<div class="text-center">
-      <h1>Boussole</h1>
+      <h1>Infos smartphone</h1>
     </div>
 	
 	
-<button type="button" id="showNorthBtn" class="btn btn-primary btn-lg btn-block">Où est le ch'nord ?</button>
-<div id="arrow"><img src="img/round_arrow_right.png"></div>
-<button type="button" id="startBtn" class="btn btn-default btn-lg btn-block">Démarrer la boussole</button>
-<button type="button" id="stopBtn" class="btn btn-default btn-lg btn-block">Arrêter la boussole</button>
+<button type="button" id="infosBtn" class="btn btn-primary btn-lg btn-block">Obtenir les infos</button>
+
 
     </div> <!-- /container -->
 
